@@ -7,11 +7,14 @@
   <title>Bootstrap Visualization Dashboard</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
+
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
     crossorigin="anonymous">
+
   <!--CSS Link-->
   <link rel="stylesheet" type="text/css" href="style.css">
+
 </head>
 
 <body>
@@ -19,7 +22,7 @@
   <div class="navigation">
     <nav class="navbar navbar-expand-lg navbar-light">
       <a class="navbar-brand" style="background-color: #0BADA6;" href="index.html">Latitude</a>
-      <button class="navbar-toggler border border-white" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+      <button class="navbar-toggler  border border-white" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
         aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -32,9 +35,9 @@
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
               <a class="dropdown-item" href="max_temperature.html">Max Temperature</a>
-              <a class="dropdown-item" href="humidity.html">Humidity</a>
+              <a class="dropdown-item active" href="humidity.html">Humidity</a>
               <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
-              <a class="dropdown-item active" href="wind_speed.html">Wind Speed</a>
+              <a class="dropdown-item" href="wind_speed.html">Wind Speed</a>
             </div>
           </li>
           <li class="nav-item">
@@ -54,12 +57,10 @@
       <div class="col-lg-7 col-md-12">
         <!-- Left box  -->
         <div class="box">
-          <h3 class="title">Wind Speed</h3>
+          <h3 class="title">Humidity</h3>
           <hr>
-          <img src="../Resources/assets/images/Fig4.png" alt="Wind Speed Graph">
-          <p>That data seems to suggest higher wind speeds as a city moves further away from the equator. However, we need more extreme points away from the equator to 
-            firmly conclude anything.
-          </p>
+          <img src="Resources/assets/images/Fig2.png" alt="Humidity Graph">
+          <p>Humidity does not show a strong correlation to latitude. There is no discernable trend between the two.</p>
         </div>
       </div>
       <div class="col-lg-5 col-md-12">
@@ -67,32 +68,39 @@
         <div class="box">
           <h5 class="title">Visualizations</h5>
           <hr>
+
+
           <div class="container">
             <div class="row" style="padding-bottom: 30px;">
               <div class="col-6">
                 <a href="max_temperature.html">
-                  <img class="panel" src="../Resources/assets/images/Fig1.png" alt="Max Temperature Image">
+                  <img class="panel" src="Resources/assets/images/Fig1.png" alt="Max Temperature Image">
                 </a>
               </div>
               <div class="col-6">
                 <a href="humidity.html">
-                  <img class="panel" src="../Resources/assets/images/Fig2.png" alt="Humidity Graph">
+                  <img class="panel active" src="Resources/assets/images/Fig2.png" alt="Humidity Graph">
                 </a>
               </div>
             </div>
+
             <div class="row" style="padding-bottom: 30px;">
               <div class="col-6">
                 <a href="cloudiness.html">
-                  <img class="panel" src="../Resources/assets/images/Fig3.png" alt="Cloudiness Graph">
+                  <img class="panel" src="Resources/assets/images/Fig3.png" alt="Cloudiness Graph">
                 </a>
               </div>
               <div class="col-6">
                 <a href="wind_speed.html">
-                  <img class="panel active" src="../Resources/assets/images/Fig4.png" alt="Wind Speed Graph">
+                  <img class="panel" src="Resources/assets/images/Fig4.png" alt="Wind Speed Graph">
                 </a>
               </div>
+
+
             </div>
           </div>
+
+
         </div>
       </div>
     </div>
@@ -109,6 +117,7 @@
     crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" 
     crossorigin="anonymous"></script>
+
 </body>
 
 </html>
